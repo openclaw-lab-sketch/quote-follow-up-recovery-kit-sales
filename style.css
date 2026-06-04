@@ -1,0 +1,26 @@
+:root {
+  --ink: #17202a;
+  --muted: #536170;
+  --line: #dbe3ea;
+  --bg: #f6f8fa;
+  --green: #116b5f;
+  --red: #c7473f;
+  --soft: #fff5f3;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; color: var(--ink); background: var(--bg); }
+main { max-width: 920px; margin: 0 auto; padding: 38px 18px; }
+section { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 26px; margin-bottom: 16px; }
+h1 { font-size: 38px; line-height: 1.08; margin: 0 0 14px; max-width: 760px; letter-spacing: 0; }
+h2 { font-size: 23px; margin: 0 0 12px; letter-spacing: 0; }
+p, li { font-size: 17px; line-height: 1.55; }
+a { color: #0b5cad; }
+.muted { color: var(--muted); }
+.cta { display: inline-block; background: var(--green); color: white; padding: 13px 17px; border-radius: 6px; text-decoration: none; font-weight: 700; margin-top: 14px; }
+.proof { border-left: 5px solid var(--red); background: var(--soft); padding: 16px 18px; border-radius: 6px; margin: 18px 0; }
+@media (max-width: 640px) {
+  h1 { font-size: 31px; }
+  section { padding: 20px; }
+  .cta { display: block; text-align: center; }
+}
